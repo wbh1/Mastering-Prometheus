@@ -1,8 +1,0 @@
-{{ define "descriptions" }}
-{{- range .Alerts.Firing }}
-[FIRING] - {{ .Annotations.description }}
-{{- end }}
-{{- range .Alerts.Resolved }}
-[RESOLVED] - {{ .Annotations.description }}
-{{- end }}
-{{ end }}
